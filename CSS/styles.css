@@ -456,10 +456,6 @@
     flex: 2;
   }
 
-  #left-side, #right-side {
-    margin: 3rem;
-  }
-
   #contact-box div {
     display: flex;
   }
