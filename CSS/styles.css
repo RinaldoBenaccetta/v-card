@@ -355,23 +355,6 @@
    * CSS start here
    */
 
-   /*#main-container, main, address, h1, h2, h3 {
-    border: 3px dotted red;
-   }*/
-
-   /*#left-side, #right-side{
-    border: 3px dotted green;
-   }
-
-   #contact-box, #main-info {
-    border: 3px dotted blue;
-   }
-
-   #contact-box div {
-    border: 3px dotted orange;
-   }*/
-
-
 
    body {
     font-family: 'Roboto', sans-serif;
@@ -391,8 +374,6 @@
    }
 
    #main-container {
-    display: flex;
-    flex-direction: row;
     width: 60%;
     margin: 3rem auto;
     border: .5rem solid black;
@@ -406,19 +387,9 @@
     );
    }
 
-   #left-side {
-    flex: 1;
-   }
-
    #right-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 2;
     border-radius: 2rem;
-
     border: 1rem solid white;
-    /*background: rgba(255, 255, 250, 0.75);*/
    }
 
    #left-side img {
@@ -433,12 +404,6 @@
    #left-side, #right-side {
     margin: 3rem;
    }
-
-   /*#left-side img, #right-side {
-    border-radius: 2rem;
-    border: 1rem solid white;
-   }*/
-
 
    #main-info {
     background-color: white;
@@ -471,4 +436,30 @@
     color: black;
    }
 
+/***********/
+/* flexbox */
+/***********/
 
+  #main-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #left-side {
+    flex: 1;
+  }
+
+  #right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+  }
+
+  #left-side, #right-side {
+    margin: 3rem;
+  }
+
+  #contact-box div {
+    display: flex;
+  }
