@@ -435,31 +435,3 @@
    a:hover {
     color: black;
    }
-
-/***********/
-/* flexbox */
-/***********/
-
-  #main-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #left-side {
-    flex: 1;
-  }
-
-  #right-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 2;
-  }
-
-  #left-side, #right-side {
-    margin: 3rem;
-  }
-
-  #contact-box div {
-    display: flex;
-  }
