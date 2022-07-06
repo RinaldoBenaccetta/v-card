@@ -353,9 +353,9 @@
    * CSS start here
    */
 
-   #main-container, main, address, h1, h2, h3 {
+   /*#main-container, main, address, h1, h2, h3 {
     border: 3px dotted red;
-   }
+   }*/
 
    #left-side, #right-side{
     border: 3px dotted green;
@@ -379,6 +379,14 @@
     flex-direction: row;
     width: 60%;
     margin: 2rem auto;
+    /*border: .5rem solid black;*/
+    background-image: repeating-linear-gradient(
+        -45deg,
+        white,
+        white 1rem,
+        black 1rem,
+        black 3rem
+    );
    }
 
    #left-side {
@@ -390,17 +398,24 @@
     flex-direction: column;
     justify-content: space-between;
     flex: 4;
+    background: rgba(255, 255, 250, 0.75);
    }
 
    #left-side img {
     width: 10rem;
     height: 10rem;
-    border-radius: 15%;
+    margin: auto;
+    
     object-fit: cover;
    }
 
    #left-side, #right-side {
     margin: 3rem;
+   }
+
+   #left-side img, #right-side {
+    border-radius: 2rem;
+    border: 1rem solid white;
    }
 
 
