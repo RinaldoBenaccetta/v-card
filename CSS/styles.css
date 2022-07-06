@@ -365,12 +365,9 @@
     border: 3px dotted blue;
    }
 
-   body {
-   }
 
-   #main-container {
-    width: 60%;
-    margin: auto;
+
+   body {
    }
 
    #contact-box div {
@@ -380,20 +377,35 @@
    #main-container {
     display: flex;
     flex-direction: row;
+    width: 60%;
+    margin: 2rem auto;
    }
 
    #left-side {
+    flex: 1;
    }
 
    #right-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 4;
    }
+
+   #left-side img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 15%;
+    object-fit: cover;
+   }
+
+   #left-side, #right-side {
+    margin: 3rem;
+   }
+
 
    #main-info {
    }
 
    #contact-box {
-    margin-top: auto;
    }
