@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -357,7 +359,7 @@
     border: 3px dotted red;
    }*/
 
-   #left-side, #right-side{
+   /*#left-side, #right-side{
     border: 3px dotted green;
    }
 
@@ -365,21 +367,36 @@
     border: 3px dotted blue;
    }
 
+   #contact-box div {
+    border: 3px dotted orange;
+   }*/
+
 
 
    body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
    }
 
-   #contact-box div {
-    border: 3px dotted orange;
+   h1 {
+    font-size: 3rem;
+   }
+
+   h2 {
+    font-size: 2rem;
+   }
+
+   h3 {
+    font-size: 1.5rem;
    }
 
    #main-container {
     display: flex;
     flex-direction: row;
     width: 60%;
-    margin: 2rem auto;
-    /*border: .5rem solid black;*/
+    margin: 3rem auto;
+    border: .5rem solid black;
+    border-radius: 3rem 0 3rem 0;
     background-image: repeating-linear-gradient(
         -45deg,
         white,
@@ -397,15 +414,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 4;
-    background: rgba(255, 255, 250, 0.75);
+    flex: 2;
+    border-radius: 2rem;
+
+    border: 1rem solid white;
+    /*background: rgba(255, 255, 250, 0.75);*/
    }
 
    #left-side img {
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     margin: auto;
-    
+    border-radius: 2rem;
+    border: 1rem solid white;
     object-fit: cover;
    }
 
@@ -413,14 +434,41 @@
     margin: 3rem;
    }
 
-   #left-side img, #right-side {
+   /*#left-side img, #right-side {
     border-radius: 2rem;
     border: 1rem solid white;
-   }
+   }*/
 
 
    #main-info {
+    background-color: white;
    }
 
-   #contact-box {
+   #contact-box div {
+    margin-top: 2rem;
+    display: flex;
    }
+
+   #contact-box div>* {
+    background-color: white;
+    padding: .5rem;
+    margin: 0;
+    text-align: right;
+   }
+
+   #contact-box div h2 {
+    padding: 1rem;
+    margin-top: 2rem;
+   }
+
+
+   a {
+    color: red;
+    background-color: white;
+   }
+
+   a:hover {
+    color: black;
+   }
+
+
